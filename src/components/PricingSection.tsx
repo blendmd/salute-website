@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+const PRICING_BG = "/images/bg01.jpeg";
+
 const inclusions = [
   "初期設計・設定費込み",
   "業務フロー設計",
@@ -9,11 +13,21 @@ export function PricingSection() {
   return (
     <section
       id="pricing"
-      className="py-20 sm:py-24 md:py-36"
+      className="relative overflow-hidden py-20 sm:py-24 md:py-36"
       data-dev-source="src/components/PricingSection.tsx"
       data-dev-label="料金プラン（PRICING）"
     >
-      <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+      <div className="pointer-events-none absolute inset-0 z-0 min-h-full w-full" aria-hidden>
+        <Image
+          src={PRICING_BG}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-white/68" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[280px_1fr] md:gap-16 lg:grid-cols-[320px_1fr]">
           {/* Left: heading */}
           <div>

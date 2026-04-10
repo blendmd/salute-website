@@ -18,15 +18,27 @@ const strengths = [
   },
 ];
 
+const SOLUTION_BG = "/images/bg01.jpeg";
+
 export function SolutionSection() {
   return (
     <section
       id="solution"
-      className="py-20 sm:py-24 md:py-36"
+      className="relative overflow-hidden py-20 sm:py-24 md:py-36"
       data-dev-source="src/components/SolutionSection.tsx"
       data-dev-label="サービス概要（SERVICE）"
     >
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42%_58%] md:gap-16 md:px-10">
+      <div className="pointer-events-none absolute inset-0 z-0 min-h-full w-full" aria-hidden>
+        <Image
+          src={SOLUTION_BG}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-white/68" />
+      </div>
+      <div className="relative z-10 mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42%_58%] md:gap-16 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
           <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">

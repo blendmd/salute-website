@@ -1,8 +1,10 @@
 import { type ReactNode } from "react";
 
-const problems: { text: string; icon: ReactNode }[] = [
+const problems: { title: string; detail: string; icon: ReactNode }[] = [
   {
-    text: "毎日同じ入力・転記をしている",
+    title: "毎日同じ入力・転記をしている",
+    detail:
+      "入力や転記、確認作業が日課化し、本業の判断や対応に回す時間が削られがちです。",
     icon: (
       <svg
         className="h-10 w-10"
@@ -21,7 +23,9 @@ const problems: { text: string; icon: ReactNode }[] = [
     ),
   },
   {
-    text: "Excelとクラウドを行き来している",
+    title: "Excelとクラウドを行き来している",
+    detail:
+      "クラウドと表計算の往復や版ズレが常態化し、正しいデータの所在が曖昧になりやすい状態です。",
     icon: (
       <svg
         className="h-10 w-10"
@@ -41,7 +45,9 @@ const problems: { text: string; icon: ReactNode }[] = [
     ),
   },
   {
-    text: "担当者しか分からない業務がある",
+    title: "担当者しか分からない業務がある",
+    detail:
+      "手順を把握している人が限られ、休暇や異動で業務が滞りやすい。マニュアルがなく暗黙知に頼ったままになりがちです。",
     icon: (
       <svg
         className="h-10 w-10"
@@ -60,7 +66,9 @@ const problems: { text: string; icon: ReactNode }[] = [
     ),
   },
   {
-    text: "人手不足で改善まで手が回らない",
+    title: "人手不足で改善まで手が回らない",
+    detail:
+      "日々の業務で手一杯で、改善やIT化まで手が回りにくい。ツールも定着せず、負担だけ増えることもあります。",
     icon: (
       <svg
         className="h-10 w-10"
@@ -100,13 +108,18 @@ export function ProblemSection() {
         <div className="mt-10 grid grid-cols-1 gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {problems.map((problem) => (
             <article
-              key={problem.text}
-              className="group flex flex-col items-center text-center rounded-xl border border-border/50 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-lg sm:p-7"
+              key={problem.title}
+              className="group flex flex-col items-start text-left rounded-xl border border-border/50 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-lg sm:p-7"
             >
-              <div className="mb-4 flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-primary/[0.08] text-primary transition-colors duration-300 group-hover:bg-primary/[0.12]">
+              <div className="mb-4 flex h-20 w-20 shrink-0 items-center justify-center self-center rounded-2xl bg-primary/[0.08] text-primary transition-colors duration-300 group-hover:bg-primary/[0.12]">
                 {problem.icon}
               </div>
-              <p className="m-0 text-[15px] leading-[1.85]">{problem.text}</p>
+              <p className="m-0 w-full text-[15px] font-bold leading-snug text-text-main">
+                {problem.title}
+              </p>
+              <p className="m-0 mt-2.5 w-full text-[14px] leading-[1.85] text-text-sub">
+                {problem.detail}
+              </p>
             </article>
           ))}
         </div>

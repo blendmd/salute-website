@@ -55,9 +55,9 @@ export function Header() {
     >
       <div className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between gap-6 px-6 md:px-10">
         <a
-          href="#top"
+          href="https://salute-ai.com/"
           className="relative flex h-9 w-[140px] shrink-0 items-center sm:w-[160px]"
-          aria-label="株式会社salute トップへ"
+          aria-label="株式会社salute 公式サイトへ"
         >
           <Image
             src={HEADER_LOGO_SRC}

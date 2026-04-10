@@ -124,7 +124,7 @@ export function FlowSection() {
           {steps.map((step, i) => (
             <li
               key={step.title}
-              className="group relative rounded-xl border border-border/50 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-lg sm:p-7"
+              className="group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-lg sm:p-7"
             >
               {i < steps.length - 1 && (
                 <div className="absolute top-1/2 -right-3 z-10 hidden text-border lg:block" aria-hidden>
@@ -133,23 +133,34 @@ export function FlowSection() {
                   </svg>
                 </div>
               )}
-              <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/[0.08] text-primary transition-colors duration-300 group-hover:bg-primary/[0.14]">
-                  {step.icon}
+              <div className="-mx-6 -mt-6 mb-5 border-b border-primary/10 bg-primary-light px-6 pb-5 pt-5 sm:-mx-7 sm:-mt-7 sm:px-7 sm:pb-6 sm:pt-6">
+                <div className="flex items-center gap-3.5">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-primary/20 bg-white text-primary shadow-[0_1px_2px_rgba(15,23,42,0.06)] transition-colors duration-300 group-hover:border-primary/35">
+                    {step.icon}
+                  </div>
+                  <p className="m-0 font-heading text-[11px] font-semibold uppercase tracking-[0.14em] text-primary/75">
+                    Step <span className="tabular-nums text-primary">{i + 1}</span>
+                  </p>
                 </div>
-                <p className="m-0 font-heading text-[13px] font-bold tracking-wider text-primary">
-                  STEP {i + 1}
-                </p>
+                <h3 className="m-0 mt-3 font-heading text-base font-bold leading-snug tracking-tight text-text-main">
+                  {step.title}
+                </h3>
               </div>
-              <h3 className="mt-1 mb-2.5 text-base font-bold leading-snug">
-                {step.title}
-              </h3>
-              <p className="m-0 mb-4 inline-block rounded-full bg-muted px-3 py-1 text-xs text-text-sub">
+              <p className="m-0 mb-0 inline-block rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">
                 {step.period}
               </p>
-              <ul className="m-0 space-y-2 pl-0 list-none text-sm leading-[1.8] text-text-sub">
+              <ul className="m-0 mt-5 list-none space-y-4 pl-0">
                 {step.points.map((p) => (
-                  <li key={p}>{p}</li>
+                  <li
+                    key={p}
+                    className="flex gap-3 text-sm leading-[1.75] text-text-sub"
+                  >
+                    <span
+                      className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-primary/55"
+                      aria-hidden
+                    />
+                    <span className="min-w-0">{p}</span>
+                  </li>
                 ))}
               </ul>
             </li>

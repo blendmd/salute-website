@@ -1,11 +1,14 @@
 import Image from "next/image";
 
-const HERO_BG =
-  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80&auto=format&fit=crop";
+const HERO_BG = "/images/main.jpeg";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-dvh flex-col overflow-hidden text-white">
+    <section
+      className="relative flex min-h-dvh flex-col overflow-hidden text-white"
+      data-dev-source="src/components/Hero.tsx"
+      data-dev-label="ヒーロー"
+    >
       <Image
         src={HERO_BG}
         alt=""

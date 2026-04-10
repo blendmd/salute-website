@@ -113,6 +113,8 @@ export function FeaturesSection() {
     <section
       id="features"
       className="bg-gradient-to-br from-[#1a3a5c] to-[#0f2744] py-20 text-white sm:py-24 md:py-36"
+      data-dev-source="src/components/FeaturesSection.tsx"
+      data-dev-label="できること（FEATURES）"
     >
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="text-center">

@@ -6,7 +6,11 @@ const philosophyStrengths = [
 
 export function TrustSection() {
   return (
-    <section className="bg-muted py-20 sm:py-24 md:py-36">
+    <section
+      className="bg-muted py-20 sm:py-24 md:py-36"
+      data-dev-source="src/components/TrustSection.tsx"
+      data-dev-label="保証・理念"
+    >
       <div className="mx-auto max-w-[1200px] space-y-12 px-6 sm:space-y-16 md:space-y-20 md:px-10">
         {/* Assurance */}
         <div className="rounded-xl border border-border/50 bg-white p-7 shadow-sm sm:p-9 md:p-12">

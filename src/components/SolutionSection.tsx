@@ -20,7 +20,12 @@ const strengths = [
 
 export function SolutionSection() {
   return (
-    <section id="solution" className="py-20 sm:py-24 md:py-36">
+    <section
+      id="solution"
+      className="py-20 sm:py-24 md:py-36"
+      data-dev-source="src/components/SolutionSection.tsx"
+      data-dev-label="サービス概要（SERVICE）"
+    >
       <div className="mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42%_58%] md:gap-16 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />

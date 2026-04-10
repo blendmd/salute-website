@@ -1,6 +1,10 @@
 export function CtaBand() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-primary to-primary-hover py-14 sm:py-16 md:py-20">
+    <section
+      className="relative overflow-hidden bg-gradient-to-r from-primary to-primary-hover py-14 sm:py-16 md:py-20"
+      data-dev-source="src/components/CtaBand.tsx"
+      data-dev-label="中間CTA（青帯）"
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.08)_0%,transparent_60%)]" />
       <div className="relative mx-auto flex max-w-[1200px] flex-col items-center gap-6 px-6 text-center md:flex-row md:justify-between md:gap-10 md:px-10 md:text-left">
         <div>

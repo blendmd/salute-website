@@ -80,7 +80,12 @@ const problems: { text: string; icon: ReactNode }[] = [
 
 export function ProblemSection() {
   return (
-    <section id="problem" className="bg-muted py-20 sm:py-24 md:py-36">
+    <section
+      id="problem"
+      className="bg-muted py-20 sm:py-24 md:py-36"
+      data-dev-source="src/components/ProblemSection.tsx"
+      data-dev-label="課題訴求（PROBLEM）"
+    >
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />

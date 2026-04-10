@@ -103,7 +103,12 @@ const steps: {
 
 export function FlowSection() {
   return (
-    <section id="flow" className="bg-muted py-20 sm:py-24 md:py-36">
+    <section
+      id="flow"
+      className="bg-muted py-20 sm:py-24 md:py-36"
+      data-dev-source="src/components/FlowSection.tsx"
+      data-dev-label="導入ステップ（FLOW）"
+    >
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />

@@ -11,7 +11,11 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/60 bg-[#0f1c2e] text-white">
+    <footer
+      className="border-t border-border/60 bg-[#0f1c2e] text-white"
+      data-dev-source="src/components/Footer.tsx"
+      data-dev-label="フッター"
+    >
       <div className="mx-auto flex max-w-[1200px] flex-col gap-8 px-6 py-12 sm:gap-10 sm:py-16 md:flex-row md:justify-between md:px-10">
         <div>
           <p className="m-0 font-heading text-lg font-bold tracking-wide">

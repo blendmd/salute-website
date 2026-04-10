@@ -87,7 +87,12 @@ export function ContactForm() {
   };
 
   return (
-    <section id="contact" className="bg-muted py-20 sm:py-24 md:py-36">
+    <section
+      id="contact"
+      className="bg-muted py-20 sm:py-24 md:py-36"
+      data-dev-source="src/components/ContactForm.tsx"
+      data-dev-label="お問い合わせフォーム"
+    >
       <div className="mx-auto max-w-[860px] px-6 md:px-10">
         <div className="text-center">
           <span className="mx-auto mb-3 block h-0.5 w-8 rounded-full bg-primary" />

@@ -7,7 +7,12 @@ const inclusions = [
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="py-20 sm:py-24 md:py-36">
+    <section
+      id="pricing"
+      className="py-20 sm:py-24 md:py-36"
+      data-dev-source="src/components/PricingSection.tsx"
+      data-dev-label="料金プラン（PRICING）"
+    >
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[280px_1fr] md:gap-16 lg:grid-cols-[320px_1fr]">
           {/* Left: heading */}

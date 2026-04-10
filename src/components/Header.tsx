@@ -45,6 +45,8 @@ export function Header() {
   return (
     <header
       id="top"
+      data-dev-source="src/components/Header.tsx"
+      data-dev-label="ヘッダー（ロゴ・ナビ）"
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-500 ${
         scrolled
           ? "border-b border-border/60 bg-white/95 shadow-sm backdrop-blur-xl"

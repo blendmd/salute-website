@@ -44,7 +44,11 @@ function ReassuranceIcon({ type }: { type: string }) {
 
 export function CtaSection() {
   return (
-    <section className="relative overflow-hidden py-28 text-center text-white md:py-40">
+    <section
+      className="relative overflow-hidden py-28 text-center text-white md:py-40"
+      data-dev-source="src/components/CtaSection.tsx"
+      data-dev-label="最終CTA"
+    >
       <Image
         src={CTA_BG_IMAGE}
         alt=""

@@ -16,10 +16,10 @@ export function TrustSection() {
         <div className="rounded-xl border border-border/50 bg-white p-7 shadow-sm sm:p-9 md:p-12">
           <div>
             <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
-            <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.22em] text-text-sub uppercase">
+            <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">
               ASSURANCE
             </p>
-            <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] leading-tight tracking-tight">
+            <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-tight tracking-tight">
               保証・安心材料
             </h2>
           </div>
@@ -36,10 +36,10 @@ export function TrustSection() {
         <div className="rounded-xl bg-gradient-to-br from-[#1a3a5c] to-[#0f2744] p-7 text-white sm:p-9 md:p-14">
           <div>
             <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-sky-400" />
-            <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.22em] uppercase text-sky-300">
+            <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] uppercase text-sky-300">
               PHILOSOPHY
             </p>
-            <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] leading-tight tracking-tight">
+            <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-tight tracking-tight">
               企業の考え方・理念
             </h2>
           </div>

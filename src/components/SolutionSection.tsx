@@ -29,10 +29,10 @@ export function SolutionSection() {
       <div className="mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42%_58%] md:gap-16 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
-          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.22em] text-text-sub uppercase">
+          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">
             SERVICE OVERVIEW
           </p>
-          <h2 className="mt-3 text-[clamp(1.85rem,4.2vw,2.85rem)] leading-snug tracking-tight">
+          <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-snug tracking-tight">
             DX推進に必要なのは
             <br />
             <span className="text-primary">実践的なIT企画</span>です。

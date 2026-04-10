@@ -18,10 +18,10 @@ export function PricingSection() {
           {/* Left: heading */}
           <div>
             <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
-            <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.22em] text-text-sub uppercase">
+            <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">
               PRICING
             </p>
-            <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] leading-tight tracking-tight">
+            <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-tight tracking-tight">
               料金プラン
             </h2>
             <p className="mt-4 hidden text-sm leading-[1.85] text-text-sub md:block">

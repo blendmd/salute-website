@@ -11,8 +11,9 @@
   --color-text-sub: #475569;
   --color-border: #e2e8f0;
   --font-sans: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-  --font-heading: "Arial Narrow", "Roboto Condensed", "Helvetica Neue",
-    sans-serif;
+  /* 見出し・英字: 長体の Condensed/Narrow は使わず、通常幅のサンセリフ */
+  --font-heading: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans",
+    "Yu Gothic", "Meiryo", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {

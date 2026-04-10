@@ -4,7 +4,7 @@ export default function ContactThanksPage() {
   return (
     <main className="thanks-page">
       <div className="thanks-inner">
-        <p className="m-0 font-heading text-[13px] font-medium tracking-[0.2em] text-primary uppercase">
+        <p className="m-0 font-heading text-[13px] font-medium tracking-[0.14em] text-primary uppercase">
           THANK YOU
         </p>
         <h1>お問い合わせを受け付けました。</h1>

@@ -89,10 +89,10 @@ export function ProblemSection() {
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
-          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.22em] text-text-sub uppercase">
+          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">
             PROBLEM
           </p>
-          <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] leading-tight tracking-tight">
+          <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-tight tracking-tight">
             こんなお悩み、ありませんか？
           </h2>
         </div>

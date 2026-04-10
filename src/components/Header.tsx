@@ -3,6 +3,14 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+/** 左上ロゴ: `public/` からのパス。画像を差し替えるときはファイルを置き換えるか、このパスを変更 */
+const HEADER_LOGO_SRC = "/images/salute_logo.png";
+/**
+ * ヒーロー上（ヘッダー透過時）は背景が暗いため、暗色ロゴを `brightness-0 invert` で明るくする。
+ * すでに白／明るいロゴ画像に差し替えたら false に。
+ */
+const HEADER_LOGO_INVERT_ON_HERO = true;
+
 const navItems = [
   { href: "#problem", label: "PROBLEM" },
   { href: "#solution", label: "SERVICE" },
@@ -46,15 +54,19 @@ export function Header() {
       <div className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between gap-6 px-6 md:px-10">
         <a
           href="#top"
-          className="flex shrink-0 items-center gap-2"
+          className="relative flex h-9 w-[140px] shrink-0 items-center sm:w-[160px]"
           aria-label="株式会社salute トップへ"
         >
           <Image
-            src="/images/salute_logo.jpg"
-            alt="salute"
-            width={130}
-            height={34}
-            className={`transition-all duration-500 ${scrolled ? "" : "brightness-0 invert"}`}
+            src={HEADER_LOGO_SRC}
+            alt="株式会社salute"
+            fill
+            className={`object-contain object-left transition-all duration-500 ${
+              HEADER_LOGO_INVERT_ON_HERO && !scrolled
+                ? "brightness-0 invert"
+                : ""
+            }`}
+            sizes="160px"
             priority
           />
         </a>

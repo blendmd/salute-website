@@ -70,17 +70,24 @@ export function SolutionSection() {
             {strengths.map((s, i) => (
               <article
                 key={s.title}
-                className="group rounded-xl border border-border/50 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-lg sm:p-6"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border/50 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-lg"
               >
-                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-lg bg-primary/[0.08] font-heading text-sm font-bold text-primary">
-                  0{i + 1}
+                <div className="flex items-center justify-center gap-1.5 border-b border-primary/10 bg-primary-light px-5 py-4 sm:px-6">
+                  <span className="shrink-0 font-heading text-[11px] font-semibold tracking-[0.08em] text-primary/70">
+                    point
+                  </span>
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-white font-heading text-[15px] font-bold tabular-nums text-primary shadow-[0_1px_2px_rgba(15,23,42,0.06)]">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                 </div>
-                <h3 className="m-0 mb-3 text-[15px] font-bold leading-snug">
-                  {s.title}
-                </h3>
-                <p className="m-0 text-sm leading-[1.85] text-text-sub">
-                  {s.body}
-                </p>
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
+                  <h3 className="m-0 mb-3 font-heading text-[15px] font-bold leading-snug text-text-main">
+                    {s.title}
+                  </h3>
+                  <p className="m-0 text-sm leading-[1.85] text-text-sub">
+                    {s.body}
+                  </p>
+                </div>
               </article>
             ))}
           </div>

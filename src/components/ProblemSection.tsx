@@ -5,11 +5,11 @@ const problems: { text: string; icon: ReactNode }[] = [
     text: "毎日同じ入力・転記をしている",
     icon: (
       <svg
-        className="h-7 w-7"
+        className="h-10 w-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
@@ -24,11 +24,11 @@ const problems: { text: string; icon: ReactNode }[] = [
     text: "Excelとクラウドを行き来している",
     icon: (
       <svg
-        className="h-7 w-7"
+        className="h-10 w-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
@@ -44,11 +44,11 @@ const problems: { text: string; icon: ReactNode }[] = [
     text: "担当者しか分からない業務がある",
     icon: (
       <svg
-        className="h-7 w-7"
+        className="h-10 w-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
@@ -63,11 +63,11 @@ const problems: { text: string; icon: ReactNode }[] = [
     text: "人手不足で改善まで手が回らない",
     icon: (
       <svg
-        className="h-7 w-7"
+        className="h-10 w-10"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
@@ -98,20 +98,14 @@ export function ProblemSection() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
-          {problems.map((problem, i) => (
+          {problems.map((problem) => (
             <article
               key={problem.text}
-              className="group rounded-xl border border-border/50 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-lg sm:p-7"
+              className="group flex flex-col items-center text-center rounded-xl border border-border/50 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/20 hover:shadow-lg sm:p-7"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/[0.08] text-primary transition-colors duration-300 group-hover:bg-primary/[0.12]">
+              <div className="mb-4 flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-primary/[0.08] text-primary transition-colors duration-300 group-hover:bg-primary/[0.12]">
                 {problem.icon}
               </div>
-              <p
-                className="m-0 mb-2 font-heading text-2xl font-bold text-primary/20"
-                aria-hidden
-              >
-                0{i + 1}
-              </p>
               <p className="m-0 text-[15px] leading-[1.85]">{problem.text}</p>
             </article>
           ))}

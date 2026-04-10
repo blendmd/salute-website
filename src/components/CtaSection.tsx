@@ -61,7 +61,7 @@ export function CtaSection() {
 
       <div className="relative mx-auto max-w-[800px] px-6 md:px-10">
         <span className="mx-auto mb-3 block h-0.5 w-8 rounded-full bg-sky-400" />
-        <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] uppercase text-sky-300">
+        <p className="m-0 font-heading text-[14px] font-semibold tracking-[0.14em] uppercase text-sky-300">
           GET STARTED
         </p>
         <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-tight tracking-tight">

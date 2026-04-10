@@ -27,7 +27,7 @@ export function Hero() {
       {/* Content — vertically centered, pushed down to clear fixed header */}
       <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-1 flex-col justify-center px-6 pt-[72px] md:px-10">
         <div className="max-w-[680px] py-16 sm:py-20 md:py-0">
-          <p className="m-0 font-heading text-[12px] font-semibold tracking-[0.14em] uppercase text-sky-300/90 sm:text-[13px]">
+          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] uppercase text-sky-300/90 sm:text-[14px]">
             株式会社salute | AI業務効率化サービス
           </p>
 

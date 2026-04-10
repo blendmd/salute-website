@@ -112,7 +112,7 @@ export function FlowSection() {
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
-          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">
+          <p className="m-0 font-heading text-[14px] font-semibold tracking-[0.14em] text-text-sub uppercase">
             FLOW
           </p>
           <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-tight tracking-tight">
@@ -138,7 +138,7 @@ export function FlowSection() {
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-primary/20 bg-white text-primary shadow-[0_1px_2px_rgba(15,23,42,0.06)] transition-colors duration-300 group-hover:border-primary/35">
                     {step.icon}
                   </div>
-                  <p className="m-0 font-heading text-[11px] font-semibold uppercase tracking-[0.14em] text-primary/75">
+                  <p className="m-0 font-heading text-[12px] font-semibold uppercase tracking-[0.14em] text-primary/75">
                     Step <span className="tabular-nums text-primary">{i + 1}</span>
                   </p>
                 </div>

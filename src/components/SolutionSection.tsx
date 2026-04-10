@@ -41,7 +41,7 @@ export function SolutionSection() {
       <div className="relative z-10 mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42%_58%] md:gap-16 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
-          <p className="m-0 font-heading text-[13px] font-semibold tracking-[0.14em] text-text-sub uppercase">
+          <p className="m-0 font-heading text-[14px] font-semibold tracking-[0.14em] text-text-sub uppercase">
             SERVICE OVERVIEW
           </p>
           <h2 className="mt-3 font-heading text-[clamp(1.85rem,4.2vw,2.85rem)] font-bold leading-snug tracking-tight">
@@ -85,7 +85,7 @@ export function SolutionSection() {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border/50 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-lg"
               >
                 <div className="flex items-center justify-center gap-1.5 border-b border-primary/10 bg-primary-light px-5 py-4 sm:px-6">
-                  <span className="shrink-0 font-heading text-[11px] font-semibold tracking-[0.08em] text-primary/70">
+                  <span className="shrink-0 font-heading text-[12px] font-semibold tracking-[0.1em] text-primary/70">
                     point
                   </span>
                   <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-white font-heading text-[15px] font-bold tabular-nums text-primary shadow-[0_1px_2px_rgba(15,23,42,0.06)]">

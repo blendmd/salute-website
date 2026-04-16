@@ -38,7 +38,7 @@ export function SolutionSection() {
         />
         <div className="absolute inset-0 bg-white/68" />
       </div>
-      <div className="relative z-10 mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42%_58%] md:gap-16 md:px-10">
+      <div className="relative z-10 mx-auto grid max-w-[1200px] gap-12 px-6 md:grid-cols-[42fr_58fr] md:gap-16 md:px-10">
         <div>
           <span className="mb-3 inline-block h-0.5 w-8 rounded-full bg-primary" />
           <p className="m-0 font-heading text-[14px] font-semibold tracking-[0.14em] text-text-sub uppercase">

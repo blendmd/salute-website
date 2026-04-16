@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "AI×RPAで業務効率化 | 株式会社salute",
   description:
-    "株式会社saluteは、AI・RPA・業務連携自動化で中小企業の現場業務を効率化する実践型サービスを提供しています。無料ヒアリング実施中。",
+    "株式会社salute(サルー）は、AI・RPA・業務連携自動化で中小企業の現場業務を効率化する実践型サービスを提供しています。無料ヒアリング実施中。",
   ...(googleVerification
     ? { verification: { google: googleVerification } }
     : {}),
